@@ -51,6 +51,7 @@ class vine_master_widget extends WP_Widget {
 	$defaults = array( 'name' => __('Vine Master', 'vine_master'), 'title' => true, 'show_vine_twitter_button' => false, 'vine_twitter_user' => false );
 	$instance = wp_parse_args( (array) $instance, $defaults );
 	?>
+		<br>
 		<b>Check the buttons to be displayed:</b>
 	<p>
 	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
@@ -92,19 +93,28 @@ class vine_master_widget extends WP_Widget {
 	<div class="description">Only available in advanced version.</div>
 	<br>
 <div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
-		<p>
-		<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
-		&nbsp;
-		<b>Vine Master Website</b>
-		</p>
-		<p><a class="button-secondary" href="http://wordpress.techgasp.com/vine-master/" target="_blank" title="Vine Master Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/vine-master-documentation/" target="_blank" title="Vine Master Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.techgasp.com/vine-master/" target="_blank" title="Vine Master">Advanced Version</a></p>
+	<p>
+	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+	&nbsp;
+	<b>Shortcode Framework</b>
+	</p>
+	<div class="description">The shortcode framework allows you to insert Vine Master inside Pages & Posts without the need of extra plugins or gimmicks. Fast page load times and top SEO. Only available in advanced version.</div>
+	<br>
 <div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
-		<p>
-		<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
-		&nbsp;
-		<b>Advanced Version Updater:</b>
-		</p>
-		<div class="description">The advanced version updater allows to automatically update your advanced plugin. Only available in advanced version.</div>
+	<p>
+	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+	&nbsp;
+	<b>Vine Master Website</b>
+	</p>
+	<p><a class="button-secondary" href="http://wordpress.techgasp.com/vine-master/" target="_blank" title="Vine Master Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/vine-master-documentation/" target="_blank" title="Vine Master Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.techgasp.com/vine-master/" target="_blank" title="Vine Master">Adv. Version</a></p>
+<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+	<p>
+	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+	&nbsp;
+	<b>Advanced Version Updater:</b>
+	</p>
+	<div class="description">The advanced version updater allows to automatically update your advanced plugin. Only available in advanced version.</div>
+	<br>
 	<?php
 	}
  }

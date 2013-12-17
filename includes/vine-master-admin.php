@@ -7,7 +7,7 @@
 <img src="<?php echo plugins_url('../images/techgasp-vinemaster-logo.png', __FILE__); ?>" alt="Vine Master" align="left" width="387px" height="171px" style="padding:5px;"/>
 </td>
 <td width="0,5"></td>
-<td width="670">
+<td width="700">
 <p>Major player in the Content Management System world! Wordpress, Joomla and Jomsocial Partner with more than 100 high quality, error free Extensions. We provide website customizations and development, SEO Optimization, Facebook Apps, etc. We have fast & furious specialized Hosting for WordPress and Joomla. Our promise, the use of minimal error free code with fast loading times. Check our website for more high quality extensions. Stay up to date by "like" and "follow" our facebook and twitter page for fresh news, releases and upgrades and updates.</p>
 <p>
 <a class="button-primary" href="http://wordpress.techgasp.com" target="_blank" title="Visit Website">Wordpress Website</a>
@@ -48,7 +48,6 @@
 <legend><h3><img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" /><?php _e('&nbsp;Advanced Version Updater:', 'vine_master'); ?></h3></legend>
 <br>
 <div class="description">Only available in <b>Vine Master Advanced Version</b></div>
-<p><a class="button-primary" href="http://wordpress.techgasp.com/vine-master/" target="_blank" title="Vine Master Advanced Version">Advanced Version</a></p>
 </fieldset>
 <p class="submit"><input class='button-primary' type='submit' name='update' value='<?php _e("Save Settings", 'vine_master'); ?>' id='submitbutton' /></p>
 
@@ -57,7 +56,7 @@
 <h3><img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />&nbsp;Widget Options:</h3>
 <div class="description">All <b>LITE</b> widget options are available in your widgets page. <b>Vine Master Widget</b>.</div>
 <h3><img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;"/>&nbsp;Shortcode Options:</h3>
-<div class="description">Only available in <b>Vine Master Advanced Version</b></div>
+<div class="description">The shortcode framework allows you to insert Vine Master inside Pages & Posts without the need of extra plugins or gimmicks. Fast page load times and top SEO. Only available in <b>Vine Master Advanced Version</b>.</div>
 <br>
 <div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
 

@@ -3,7 +3,7 @@ Contributors: Techgasp
 Tags: wordpress, plugin, widget, shortcode, techgasp, vine, video, vine video, twitter video, twitter, video tweet, vine tweet
 Requires at least: 3.5
 Tested up to: 3.8
-Stable tag: 4.1
+Stable tag: 4.2
 License: GPLv2 or later
 
 Vine Master for let's you integrate the exciting twitter Vine Videos into any Wordpress widget position, page or post. Bombastic!!
@@ -18,6 +18,8 @@ You can proudly display your mobile phone videos inside your wordpress blog in a
 
 That's not all, we also packed this great plugin with optional display of the Twitter Follow button to gather twitter followers and the Tweet button to make your website and videos "virulent". Watch those wordpress visits explode!
 
+Both the widget and the shortcode framework are fully mobile responsive, a must for any professional website.
+
 **Exciting Vine Videos for Wordpress**
 
 IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
@@ -26,6 +28,7 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 * Display or hide Widget Title
 * Display or hide Twitter Follow Button and Tweet
+* Fully Responsive
 
 **ADVANCED Version Contains:**
 
@@ -34,6 +37,7 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 * Display or hide Vine Video Player
 * Select Display Type (Simple or Postcard)
 * Select Display Size
+* Fully Mobile Responsive
 * Shortcode Framework v2. Publish widget inside pages and posts
 * [Advanced Version Link](http://wordpress.techgasp.com/vine-master/)
 
@@ -94,6 +98,10 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 
 == Changelog ==
+
+= 4.2 =
+* Fully Mobile Responsive
+* Adding Style for mobile devices of res. 600 under
 
 = 4.1 =
 * Wordpress 3.8 Ready

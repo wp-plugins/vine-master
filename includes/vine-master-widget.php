@@ -24,16 +24,22 @@ class vine_master_widget extends WP_Widget {
 		echo $before_widget;
 		
 	// Display the widget title
-		if ( $title )
+		if ( $title ){
 		echo $before_title . $name . $after_title;
+		}
+		else{
+		}
 	//Display Vine Player
 
 	//Display Vine Twitter Follow Button
-		if ( $show_vine_twitter_button )
-		echo '<br><a href="https://twitter.com/'.$vine_twitter_user.'" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow</a>&nbsp;&nbsp;' .
+		if ( $show_vine_twitter_button ){
+		echo '<a href="https://twitter.com/'.$vine_twitter_user.'" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow</a>&nbsp;&nbsp;' .
 			'<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'.$vinespacer.'http'.$vinespacer.':'.$vinespacer.'https'.$vinespacer.';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'.$vinespacer.'://platform.twitter.com/widgets.js'.$vinespacer.';fjs.parentNode.insertBefore(js,fjs);}}(document, '.$vinespacer.'script'.$vinespacer.', '.$vinespacer.'twitter-wjs'.$vinespacer.');</script>' .
 			'<a href="https://twitter.com/share" class="twitter-share-button" data-via="'.$vine_twitter_user.'">Tweet</a>' .
 			'<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'.$vinespacer.'http'.$vinespacer.':'.$vinespacer.'https'.$vinespacer.';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'.$vinespacer.'://platform.twitter.com/widgets.js'.$vinespacer.';fjs.parentNode.insertBefore(js,fjs);}}(document, '.$vinespacer.'script'.$vinespacer.', '.$vinespacer.'twitter-wjs'.$vinespacer.');</script>';
+		}
+		else{
+		}
 	echo $after_widget;
 	}
 	//Update the widget

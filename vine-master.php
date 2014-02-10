@@ -2,7 +2,7 @@
 /**
 Plugin Name: Vine Master
 Plugin URI: http://wordpress.techgasp.com/vine-master/
-Version: 4.2
+Version: 4.3
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: vine-master

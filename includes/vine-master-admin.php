@@ -1,66 +1,72 @@
+<?php
+if( is_multisite() ) {
+function menu_multi_vine_master_admin(){
+// Create menu
+add_menu_page( 'Vine Master', 'Vine Master', 'manage_options', 'vine-master', 'vine_master_admin', plugins_url( 'vine-master/images/techgasp-minilogo-16.png' ) );
+}
+}
+else {
+// Create menu
+function menu_single_vine_master_admin(){
+if ( is_admin() )
+add_menu_page( 'Vine Master', 'Vine Master', 'manage_options', 'vine-master', 'vine_master_admin', plugins_url( 'vine-master/images/techgasp-minilogo-16.png' ) );
+}
+}
+
+		///////////////////////
+		// WORDPRESS ACTIONS //
+		///////////////////////
+		if( is_multisite() ) {
+		add_action( 'network_admin_menu', 'menu_multi_vine_master_admin' );
+		}
+		else {
+		add_action( 'admin_menu', 'menu_single_vine_master_admin' );
+		}
+
+function vine_master_admin(){
+?>
 <div class="wrap">
-<div class="icon32" style="width:40px; vertical-align:middle;"><img src="<?php echo plugins_url('../images/techgasp-minilogo.png', __FILE__); ?>" alt="' . esc_attr__( 'TechGasp Plugins') . '" /><br /></div>
-<h2><b>TechGasp</b></h2>
-<table>
-<tr>
-<td width="387">
-<img src="<?php echo plugins_url('../images/techgasp-vinemaster-logo.png', __FILE__); ?>" alt="Vine Master" align="left" width="387px" height="171px" style="padding:5px;"/>
-</td>
-<td width="0,5"></td>
-<td width="700">
-<p>Major player in the Content Management System world! Wordpress, Joomla and Jomsocial Partner with more than 100 high quality, error free Extensions. We provide website customizations and development, SEO Optimization, Facebook Apps, etc. We have fast & furious specialized Hosting for WordPress and Joomla. Our promise, the use of minimal error free code with fast loading times. Check our website for more high quality extensions. Stay up to date by "like" and "follow" our facebook and twitter page for fresh news, releases and upgrades and updates.</p>
+<div style="width:40px; vertical-align:middle; float:left;"><img src="<?php echo plugins_url('../images/techgasp-minilogo.png', __FILE__); ?>" alt="' . esc_attr__( 'TechGasp Plugins') . '" /><br /></div>
+<h2><b>&nbsp;TechGasp</b></h2>
+<?php
+
+if(!class_exists('WP_List_Table')){
+	require_once( ABSPATH . 'wp-admin/includes/class-wp-list-table.php' );
+}
+
+if(!class_exists('vine_master_admin_table_header')){
+	require_once( dirname( __FILE__ ) . '/vine-master-admin-table-header.php');
+}
+//Prepare Table of elements
+$wp_list_table = new vine_master_admin_table_header();
+//Table of elements
+$wp_list_table->display();
+?>
+</br>
+<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+</br>
+<?php
+if(!class_exists('vine_master_admin_table_news')){
+	require_once( dirname( __FILE__ ) . '/vine-master-admin-table-news.php');
+}
+//Prepare Table of elements
+$wp_list_table = new vine_master_admin_table_news();
+//Table of elements
+$wp_list_table->display();
+?>
+</br>
+<h2>IMPORTANT: Makes no use of Javascript or Ajax to keep your website fast and conflicts free</h2>
+
+<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+
+<br>
+
 <p>
-<a class="button-primary" href="http://wordpress.techgasp.com" target="_blank" title="Visit Website">Wordpress Website</a>
-<a class="button-primary" href="http://www.techgasp.com" target="_blank" title="Visit Website">Joomla Website</a>
-<a class="button-primary" href="http://hosting.techgasp.com" target="_blank" title="Visit Website">Hosting Website</a>
-<a class="button-secondary" href="https://www.facebook.com/TechGasp" target="_blank" title="Facebook Page">Facebook Page</a>
-<a class="button-secondary" href="https://twitter.com/TechGasp" target="_blank" title="Follow Twitter">Twitter Page</a>
-<a class="button-secondary" href="https://plus.google.com/118126459543511361864" target="_blank" title="Follow Google">Google Page</a>
+<a class="button-secondary" href="http://wordpress.techgasp.com" target="_blank" title="Visit Website">More TechGasp Plugins</a>
+<a class="button-secondary" href="http://wordpress.techgasp.com/support/" target="_blank" title="Facebook Page">TechGasp Support</a>
+<a class="button-primary" href="http://wordpress.techgasp.com/vine-master/" target="_blank" title="Visit Website"><?php echo get_option('vine_master_name'); ?> Info</a>
+<a class="button-primary" href="http://wordpress.techgasp.com/vine-master-documentation/" target="_blank" title="Visit Website"><?php echo get_option('vine_master_name'); ?> Documentation</a>
+<a class="button-primary" href="http://wordpress.techgasp.com/vine-master/" target="_blank" title="Visit Website">Get Add-ons</a>
 </p>
-<h3>Stay up-to-date with new extension releases, extension updates, & upgrades:</h3>
-<p>
-<span style="float:left; vertical-align:baseline;">
-<fb:like href="https://www.facebook.com/TechGasp" send="true" layout="button_count" width="90" show_faces="false"></fb:like>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=281766848505812";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-&nbsp;
-<a href="https://twitter.com/TechGasp" class="twitter-follow-button" data-show-count="true">Follow @TechGasp</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-</span>
-</p>
-</td>
-</tr>
-</table>
-
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
-
-<div id="icon-tools" class="icon32" style="width:40px; vertical-align:middle;"></br></div>
-<h2><?php _e("Vine Master LITE Version", 'vine_master'); ?></h2>
-<br>
-<form method="post" width='1'>
-<fieldset class="options">
-<legend><h3><img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" /><?php _e('&nbsp;Advanced Version Updater:', 'vine_master'); ?></h3></legend>
-<br>
-<div class="description">Only available in <b>Vine Master Advanced Version</b></div>
-</fieldset>
-<p class="submit"><input class='button-primary' type='submit' name='update' value='<?php _e("Save Settings", 'vine_master'); ?>' id='submitbutton' /></p>
-
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
-
-<h3><img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />&nbsp;Widget Options:</h3>
-<div class="description">All <b>LITE</b> widget options are available in your widgets page. <b>Vine Master Widget</b>.</div>
-<h3><img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;"/>&nbsp;Shortcode Options:</h3>
-<div class="description">The shortcode framework allows you to insert Vine Master inside Pages & Posts without the need of extra plugins or gimmicks. Fast page load times and top SEO. Only available in <b>Vine Master Advanced Version</b>.</div>
-<br>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
-
-<h3><img src="<?php echo plugins_url('../images/techgasp-minilogo.png', __FILE__); ?>" style="width:40px; vertical-align:middle;" alt="' . esc_attr__( 'TechGasp Plugins') . '" /> Vine Master Website</h3>
-<p><a class="button-secondary" href="http://wordpress.techgasp.com/vine-master/" target="_blank" title="Vine Master Info Page">Info Page</a> <a class="button-secondary" href="http://wordpress.techgasp.com/vine-master-documentation/" target="_blank" title="Vine Master Documentation">Documentation</a> <a class="button-primary" href="http://wordpress.techgasp.com/vine-master/" target="_blank" title="Vine Master Advanced Version">Advanced Version</a></p>
-</form>
-</div>
+<?php
+}

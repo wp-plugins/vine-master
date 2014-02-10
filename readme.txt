@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, widget, shortcode, techgasp, vine, video, vine video, twitter video, twitter, video tweet, vine tweet
 Requires at least: 3.5
-Tested up to: 3.8
-Stable tag: 4.2
+Tested up to: 3.8.1
+Stable tag: 4.3
 License: GPLv2 or later
 
 Vine Master for let's you integrate the exciting twitter Vine Videos into any Wordpress widget position, page or post. Bombastic!!
@@ -26,25 +26,35 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 **LITE Version Contains:**
 
-* Display or hide Widget Title
-* Display or hide Twitter Follow Button and Tweet
+* Display, Hide or Change any Widget Title
+* Vine Master Advanced Viral Widget:
+* Display or hide Twitter Follow Button
+* Display or hide Tweet Share Button
 * Fully Responsive
 
 **ADVANCED Version Contains:**
 
-* Display or hide Widget Title
-* Display or hide Twitter Follow Button and Tweet Button
+* Display, Hide or Change any Widget Title
+* Fully Mobile Responsive
+
+* Vine Master Advanced Viral Widget:
+* Display or hide Twitter Follow Button
+* Display or hide Tweet Share Button
+
+* Vine Master Responsive Player Widget:
 * Display or hide Vine Video Player
+* Plays any Vine Video
 * Select Display Type (Simple or Postcard)
 * Select Display Size
-* Fully Mobile Responsive
-* Shortcode Framework v2. Publish widget inside pages and posts
+
+* Shortcode Framework v3. Universal Shortcode for all pages and posts and Individual Shortcode for each page or post
+* Shortcodes allow you to professionally display your instagram photos inside your wordpress pages and posts
 * [Advanced Version Link](http://wordpress.techgasp.com/vine-master/)
 
 **ONLINE DEMO**
 
 * Right of the page, sidebar widget
-* Inside the post. With shortcode framework v2
+* Inside the post. With shortcode framework
 * [Demo Link](http://wordpress.techgasp.com/vine-master/)
 
 **More High Quality Plugins?**
@@ -58,8 +68,8 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 == Installation ==
 
 1. Use the Wordpress Installer, Updater
-2. Activate in the "Plugins" admin panel.
-3. Visit the "Widget Page | Vine Master" to configure the settings and your template widget position.
+2. Activate in the "Plugins" admin panel
+3. Visit the "Widget Page | Vine Master Widgets" to configure widgets settings and your template widget positions
 4. [Vine Master Documentation](http://wordpress.techgasp.com/vine-master-documentation)
 
 
@@ -68,20 +78,21 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 = Issues with buttons display =
 * Please update to latest version. Up-to-date API's are available
 
-= Where is the Player? =
-* Advanced Version contains: Display or hide Widget Title, Display or hide Twitter Follow Button and Tweet Button, Display or hide Vine Video Player, Select Display Type (Simple or Postcard), Select Display Size, Shortcode Framework v2. Publish widget inside pages and posts
+= Where are my widgets? =
+* Advanced Version Add-ons contains all widgets
 * [Advance Version Link](http://wordpress.techgasp.com/vine-master/)
 
-= Insert Widget in Pages or Posts =
-* Advanced Version contains the shortcode framework v2
-* Insert the shortcode into any page or post. [vine-master]
+= Insert Shortcode in Pages or Posts =
+* Advanced Version Add-ons contain the shortcode framework v3
+* Insert the universal shortcode into any page or post. [vine-master-un]
+* Insert the individual shortcode into any page or post. [vine-master]
 * [Advance Version Link](http://wordpress.techgasp.com/vine-master/)
 
-= What's this Shortcode Framework v2 =
+= What's this Shortcode Framework v3 =
 * It's a framework developed by TechGasp and built upon wordpress marvellous resources
 * Allows users to quickly and easily display plugins or widgets inside their pages and posts
-* It's available in all TechGasp advanced version plugins. Lite versions plugins do not include shortcode framework v2
-* [About Shortcode Framework v2](http://wordpress.techgasp.com/new-wordpress-framework-from-techgasp/)
+* It's available in all TechGasp advanced version plugins. Lite versions plugins do not include shortcode framework v3
+* [About Shortcode Framework v3](http://wordpress.techgasp.com/techgasp-wordpress-framework-v3/)
 
 = Need More Help =
 * [Vine Master Documentation](http://wordpress.techgasp.com/vine-master-documentation)
@@ -90,14 +101,24 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 == Screenshots ==
 
-1. Widget With Vine Player (Postcard Display, Big Size) + Twitter Follow Button + Tweet Button.
-2. Widget With Vine Player (Simple display) + Twitter Follow Button + Tweet Button.
-3. Widget With Vine Player (Simple display, With Overlay) + Twitter Follow Button + Tweet Button.
-4. Widget With Vine Player (Postcard Display, Small Size) + Twitter Follow Button + Tweet Button.
-5. Widget inside pages and posts. Shortcode framework implementation v2. Vine Video inside a post aligned left.
+1. Vine Master Responsive Player Widget (Postcard Display, Big Size) + Vine Master Advanced Viral Widget (Twitter Follow Button + Tweet Button)
+2. Vine Master Responsive Player Widget (Simple display) + Vine Master Advanced Viral Widget (Twitter Follow Button + Tweet Button)
+3. Vine Master Responsive Player Widget (Simple display, With Overlay) + Vine Master Advanced Viral Widget (Twitter Follow Button + Tweet Button)
+4. Vine Master Responsive Player Widget (Postcard Display, Small Size) + Vine Master Advanced Viral Widget (Twitter Follow Button + Tweet Button)
+5. Widget inside pages and posts. Shortcode framework implementation. Vine Video inside a post aligned left.
 
 
 == Changelog ==
+
+= 4.3 =
+* New TechGasp Plugin Framework
+* New Plugin Menu
+* New Administrator Page
+* New Universal Shortcode that can be combined with Individual Shortcodes in Pages and Posts
+* Adding index SEC
+* New Vine API
+* Vine Master Advanced Viral Widget
+* Vine Master Responsive Player Widget
 
 = 4.2 =
 * Fully Mobile Responsive
@@ -133,8 +154,11 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 == Upgrade Notice ==
 
+= 4.3 =
+* IMPORTANT Upgrade to new TechGasp Plugin Framework v3
+
 = 4.0 =
-* IMPORTANT Upgrade to new framework
+* IMPORTANT Upgrade to new TechGasp Plugin Framework v2
 
 = 2.0 =
 * IMPORTANT Upgrade to Stable release

@@ -2,7 +2,7 @@
 /**
 Plugin Name: Vine Master
 Plugin URI: http://wordpress.techgasp.com/vine-master/
-Version: 4.3
+Version: 4.3.5
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: vine-master
@@ -29,9 +29,9 @@ if(!class_exists('vine_master')) :
 ///////DEFINE ID//////
 define('VINE_MASTER_ID', 'vine-master');
 ///////DEFINE VERSION///////
-define( 'vine_master_VERSION', '4.3' );
+define( 'vine_master_VERSION', '4.3.5' );
 global $vine_master_version, $vine_master_name;
-$vine_master_version = "4.3"; //for other pages
+$vine_master_version = "4.3.5"; //for other pages
 $vine_master_name = "Vine Master"; //pretty name
 if( is_multisite() ) {
 update_site_option( 'vine_master_installed_version', $vine_master_version );

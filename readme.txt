@@ -3,7 +3,7 @@ Contributors: Techgasp
 Tags: wordpress, plugin, widget, shortcode, techgasp, vine, video, vine video, twitter video, twitter, video tweet, vine tweet
 Requires at least: 3.5
 Tested up to: 3.8.1
-Stable tag: 4.3
+Stable tag: 4.3.5
 License: GPLv2 or later
 
 Vine Master for let's you integrate the exciting twitter Vine Videos into any Wordpress widget position, page or post. Bombastic!!
@@ -47,8 +47,10 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 * Select Display Type (Simple or Postcard)
 * Select Display Size
 
-* Shortcode Framework v3. Universal Shortcode for all pages and posts and Individual Shortcode for each page or post
-* Shortcodes allow you to professionally display your instagram photos inside your wordpress pages and posts
+* TechGasp Shortcode Framework v3:
+* Universal Shortcode for all pages and posts, same Shortcode applies to all pages and posts. Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page or post. Option to automatically only show the shortcode in Posts and not Pages. Option to Automatically show the shortcode After the Title or After the Content.
+* Individual Shortcode for each page or post, individual customized shortcode per page or post
+* Shortcodes allow you to professionally display your plugin inside pages and posts maintaining fast page load times and excellent Google SEO
 * [Advanced Version Link](http://wordpress.techgasp.com/vine-master/)
 
 **ONLINE DEMO**
@@ -109,6 +111,17 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 
 == Changelog ==
+
+= 4.3.5 =
+* TechGasp Plugin Framework v3 Improvements and Upgrades
+* New Universal Shortcode Options:
+* Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page and post
+* Option to Automatically only show the shortcode in Posts, not Pages
+* Option to Automatically show the shortcode After the Title or After the Content
+* Improved TechGasp Mobile Responsiveness
+* Code clean up and speed up
+* Fixed a couple of warnings
+* Improved Updater
 
 = 4.3 =
 * New TechGasp Plugin Framework

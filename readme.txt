@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, widget, shortcode, techgasp, vine, video, vine video, twitter video, twitter, video tweet, vine tweet
 Requires at least: 3.5
-Tested up to: 3.8.1
-Stable tag: 4.3.5
+Tested up to: 3.8.2
+Stable tag: 4.3.6
 License: GPLv2 or later
 
 Vine Master for let's you integrate the exciting twitter Vine Videos into any Wordpress widget position, page or post. Bombastic!!
@@ -111,6 +111,10 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 
 == Changelog ==
+
+= 4.3.6 =
+* Added Widgets and Shortcode option to Unmute and Auto-Start Audio
+* Added automatic deletion of site_transients
 
 = 4.3.5 =
 * TechGasp Plugin Framework v3 Improvements and Upgrades

@@ -12,19 +12,19 @@ class vine_master_admin_updater_table extends WP_List_Table {
 <table class="widefat fixed" cellspacing="0">
 	<thead>
 		<tr>
-			<th id="columnname" class="manage-column column-columnname" scope="col" width="387"><legend><h3><img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" /><?php _e('&nbsp;Advanced Version Updater:', 'vine_master'); ?></h3></legend></th>
+			<th id="columnname" class="manage-column column-columnname" scope="col" width="387"><legend><h3><img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" /><?php _e('&nbsp;Advanced Version Updater', 'vine_master'); ?></h3></legend></th>
 		</tr>
 	</thead>
 
 	<tfoot>
 		<tr>
-			<th class="manage-column column-columnname" scope="col" width="387"></th>
+			<th class="manage-column column-columnname" scope="col"></th>
 		</tr>
 	</tfoot>
 
 	<tbody>
 		<tr class="alternate" valign="top">
-			<td class="column-columnname" width="387">
+			<td class="column-columnname">
 <p>The Advanced Updater allows you to easily Update / Upgrade your Advanced plugin.</p>
 <p>Check the Add-ons Page.</p>
 			</td>

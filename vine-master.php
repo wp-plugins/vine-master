@@ -2,7 +2,7 @@
 /**
 Plugin Name: Vine Master
 Plugin URI: http://wordpress.techgasp.com/vine-master/
-Version: 4.3.6
+Version: 4.4.1.4
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: vine-master
@@ -26,12 +26,16 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 if(!class_exists('vine_master')) :
+///////DEFINE DIR///////
+define( 'VINE_MASTER_DIR', plugin_dir_path( __FILE__ ) );
+///////DEFINE URL///////
+define( 'VINE_MASTER_URL', plugin_dir_url( __FILE__ ) );
 ///////DEFINE ID//////
-define('VINE_MASTER_ID', 'vine-master');
+define( 'VINE_MASTER_ID', 'vine-master');
 ///////DEFINE VERSION///////
-define( 'vine_master_VERSION', '4.3.6' );
+define( 'VINE_MASTER_VERSION', '4.4.1.4' );
 global $vine_master_version, $vine_master_name;
-$vine_master_version = "4.3.6"; //for other pages
+$vine_master_version = "4.4.1.4"; //for other pages
 $vine_master_name = "Vine Master"; //pretty name
 if( is_multisite() ) {
 update_site_option( 'vine_master_installed_version', $vine_master_version );
@@ -54,11 +58,10 @@ require_once( dirname( __FILE__ ) . '/includes/vine-master-admin-updater.php');
 // HOOK WIDGET VIRAL
 require_once( dirname( __FILE__ ) . '/includes/vine-master-widget-viral.php');
 
-
 class vine_master{
 //REGISTER PLUGIN
 public static function vine_master_register(){
-register_setting(VINE_MASTER_ID, 'tsm_quote');
+register_activation_hook( __FILE__, array( __CLASS__, 'vine_master_activate' ) );
 }
 public static function content_with_quote($content){
 $quote = '<p>' . get_option('tsm_quote') . '</p>';
@@ -66,10 +69,15 @@ $quote = '<p>' . get_option('tsm_quote') . '</p>';
 }
 //SETTINGS LINK IN PLUGIN MANAGER
 public static function vine_master_links( $links, $file ) {
-	if ( $file == plugin_basename( dirname(__FILE__).'/vine-master.php' ) ) {
-		$links[] = '<a href="' . admin_url( 'admin.php?page=vine-master' ) . '">'.__( 'Settings' ).'</a>';
+if ( $file == plugin_basename( dirname(__FILE__).'/vine-master.php' ) ) {
+		if( is_network_admin() ){
+		$techgasp_plugin_url = network_admin_url( 'admin.php?page=vine-master' );
+		}
+		else {
+		$techgasp_plugin_url = admin_url( 'admin.php?page=vine-master' );
+		}
+	$links[] = '<a href="' . $techgasp_plugin_url . '">'.__( 'Settings' ).'</a>';
 	}
-
 	return $links;
 }
 
@@ -101,8 +109,9 @@ update_option( 'vine_master_newest_version', $r->new_version );
 }
 }
 }
-		// Advanced Updater
-
+//Remove WP Updater
+// Advanced Updater
+//Updater Label Message
 //END CLASS
 }
 if ( is_admin() ){

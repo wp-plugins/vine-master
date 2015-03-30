@@ -1,9 +1,9 @@
 === Vine Master ===
 Contributors: Techgasp
-Tags: wordpress, plugin, widget, shortcode, techgasp, vine, video, vine video, twitter video, twitter, video tweet, vine tweet
+Tags: wordpress, plugin, widget, shortcode, vine, video, vine video, vine feed, twitter video, twitter, video tweet, vine tweet
 Requires at least: 3.5
-Tested up to: 4.1
-Stable tag: 4.3.6
+Tested up to: 4.1.1
+Stable tag: 4.4.1.4
 License: GPLv2 or later
 
 Vine Master for let's you integrate the exciting twitter Vine Videos into any Wordpress widget position, page or post. Bombastic!!
@@ -12,13 +12,13 @@ Vine Master for let's you integrate the exciting twitter Vine Videos into any Wo
 
 Vine Master let's you integrate the exciting Vine Videos into any wordpress website. Done with the usual TechGasp quality, Vine Master is easy to use, well documented, fast-loading, SEO ready and makes no use of Javascipt. Only for professional websites.
 
-Vine is twitter mobile app to create and share videos, but how to professionally show your videos in wordpress? Easy, Vine Master does all the work for you.
+Vine Master does all the work for you. You can proudly display your Vine videos in your wordpress blog in any widget position or inside your pages and posts with TechGasp Shortcode Framework. Have full control over Display Type (Simple or Postcard) and Display Size.
 
-You can proudly display your mobile phone videos inside your wordpress blog in any widget position or inside your pages and posts with our shortcode framework v2. Have full control over Display Type (Simple or Postcard) and Display Size.
+Vine Master also includes an awesome Vine Video Feed Widget that automatically display your latest Vine Videos.
 
 That's not all, we also packed this great plugin with optional display of the Twitter Follow button to gather twitter followers and the Tweet button to make your website and videos "virulent". Watch those wordpress visits explode!
 
-Both the widget and the shortcode framework are fully mobile responsive, a must for any professional website.
+Both the widgets and the shortcode framework are fully mobile responsive, a must for any professional website.
 
 **Exciting Vine Videos for Wordpress**
 
@@ -46,6 +46,9 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 * Plays any Vine Video
 * Select Display Type (Simple or Postcard)
 * Select Display Size
+
+* Vine Master Responsive Feed Widget:
+* Displays Feed with your Vine Videos
 
 * TechGasp Shortcode Framework v3:
 * Universal Shortcode for all pages and posts, same Shortcode applies to all pages and posts. Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page or post. Option to automatically only show the shortcode in Posts and not Pages. Option to Automatically show the shortcode After the Title or After the Content.
@@ -107,10 +110,33 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 2. Vine Master Responsive Player Widget (Simple display) + Vine Master Advanced Viral Widget (Twitter Follow Button + Tweet Button)
 3. Vine Master Responsive Player Widget (Simple display, With Overlay) + Vine Master Advanced Viral Widget (Twitter Follow Button + Tweet Button)
 4. Vine Master Responsive Player Widget (Postcard Display, Small Size) + Vine Master Advanced Viral Widget (Twitter Follow Button + Tweet Button)
-5. Widget inside pages and posts. Shortcode framework implementation. Vine Video inside a post aligned left.
+5. Vine Master Responsive Feed Widget
+6. Shortcode framework implementation. Vine Video inside a post aligned left.
 
 
 == Changelog ==
+
+= 4.4.1.4 =
+* Getting all widget titles network ready
+
+= 4.4.1.3 =
+* Tweaking Updater
+
+= 4.4.1.2 =
+* Adding Network Warnings and help texts
+* Adding Vine Feed Widget
+
+= 4.4.1.1 =
+* Fixing uninstall, plugin deletion on wordpress network and multi-sites
+
+= 4.4.1.0 =
+* Fixing Shortcodes
+* Fixing Widgets
+* General clean-up and speed boost
+
+= 4.4.0 =
+* Wordpress multi-site or wordpress network ready
+* New screenshots and images
 
 = 4.3.6 =
 * Added Widgets and Shortcode option to Unmute and Auto-Start Audio

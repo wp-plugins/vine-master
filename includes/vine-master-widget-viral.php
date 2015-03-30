@@ -5,12 +5,7 @@ add_action( 'widgets_init', 'vine_master_widget_viral' );
 function vine_master_widget_viral() {
 register_widget( 'vine_master_widget_viral' );
 }
-add_action( 'wp_enqueue_scripts', 'vine_master_wvcss' );
-//load css for shortcode
-function vine_master_wvcss() {
-	wp_register_style( 'vine_master_wvcss', plugins_url('vine-master-style.css', __FILE__) );
-	wp_enqueue_style( 'vine_master_wvcss' );
-}
+
 class vine_master_widget_viral extends WP_Widget {
 	function vine_master_widget_viral() {
 	$widget_ops = array( 'classname' => 'Vine Master Viral Buttons', 'description' => __('Advanced Viral Twitter Follow and Tweet buttons to make your website and videos "virulent". Watch those wordpress visits explode!. ', 'vine_master') );
@@ -31,9 +26,17 @@ class vine_master_widget_viral extends WP_Widget {
 	// Display the widget title
 	if ( $vine_title ){
 		if (empty ($vine_title_new)){
-		$vine_title_new = get_option('vine_master_name');
-		}
+			if(is_multisite()){
+			$vine_title_new = get_site_option('vine_master_name');
+			}
+			else{
+			$vine_title_new = get_option('vine_master_name');
+			}
 		echo $before_title . $vine_title_new . $after_title;
+		}
+		else{
+		echo $before_title . $vine_title_new . $after_title;
+		}
 	}
 	else{
 	}

@@ -71,7 +71,7 @@ class vine_master_widget_viral extends WP_Widget {
 		<br>
 		<b>Check the buttons to be displayed:</b>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['vine_title'], true ); ?> id="<?php echo $this->get_field_id( 'vine_title' ); ?>" name="<?php echo $this->get_field_name( 'vine_title' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'vine_title' ); ?>"><b><?php _e('Display Widget Title', 'vine_master'); ?></b></label></br>
@@ -81,9 +81,9 @@ class vine_master_widget_viral extends WP_Widget {
 	<br>
 	<input id="<?php echo $this->get_field_id( 'vine_title_new' ); ?>" name="<?php echo $this->get_field_name( 'vine_title_new' ); ?>" value="<?php echo $instance['vine_title_new']; ?>" style="width:auto;" />
 	</p>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; width:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['show_vine_twitter_button'], true ); ?> id="<?php echo $this->get_field_id( 'show_vine_twitter_button' ); ?>" name="<?php echo $this->get_field_name( 'show_vine_twitter_button' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'show_vine_twitter_button' ); ?>"><b><?php _e('Show Twitter Buttons', 'vine_master'); ?></b></label></br>
@@ -92,9 +92,9 @@ class vine_master_widget_viral extends WP_Widget {
 	<label for="<?php echo $this->get_field_id( 'vine_twitter_user' ); ?>"><?php _e('insert your Twitter Username:', 'vine_master'); ?></label></br>
 	<input id="<?php echo $this->get_field_id( 'vine_twitter_user' ); ?>" name="<?php echo $this->get_field_name( 'vine_twitter_user' ); ?>" value="<?php echo $instance['vine_twitter_user']; ?>" style="width:auto;" />
 	</p>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 		<p>
-		<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+		<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; width:16px; vertical-align:middle;" />
 		&nbsp;
 		<b>Vine Master Website</b>
 		</p>

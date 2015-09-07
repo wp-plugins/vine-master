@@ -10,7 +10,7 @@ class vine_master_widget_viral extends WP_Widget {
 	function vine_master_widget_viral() {
 	$widget_ops = array( 'classname' => 'Vine Master Viral Buttons', 'description' => __('Advanced Viral Twitter Follow and Tweet buttons to make your website and videos "virulent". Watch those wordpress visits explode!. ', 'vine_master') );
 	$control_ops = array( 'width' => 300, 'height' => 350, 'id_base' => 'vine_master_widget_viral' );
-	$this->WP_Widget( 'vine_master_widget_viral', __('Vine Master Viral Buttons', 'vine_master'), $widget_ops, $control_ops );
+	parent::__construct( 'vine_master_widget_viral', __('Vine Master Viral Buttons', 'vine_master'), $widget_ops, $control_ops );
 	}
 	
 	function widget( $args, $instance ) {

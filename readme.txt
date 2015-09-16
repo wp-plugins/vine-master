@@ -3,7 +3,7 @@ Contributors: TechGasp
 Tags: wordpress, plugin, widget, shortcode, vine, video, vine video, vine feed, twitter video, twitter, video tweet, vine tweet
 Requires at least: 3.5
 Tested up to: 4.3
-Stable tag: 4.4.2.3
+Stable tag: 4.4.2.4
 License: GPLv2 or later
 
 Vine Master for let's you integrate the exciting twitter Vine Videos into any Wordpress widget position, page or post. Bombastic!!
@@ -22,35 +22,36 @@ Both the widgets and the shortcode framework are fully mobile responsive, a must
 
 **Exciting Vine Videos for Wordpress**
 
-IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
+> IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
-**LITE Version Contains:**
+**LITE Version Contains**
 
 * Display, Hide or Change any Widget Title
-* Vine Master Advanced Viral Widget:
+
+* Vine Master Advanced Viral Widget
 * Display or hide Twitter Follow Button
 * Display or hide Tweet Share Button
 * Fully Responsive
 
-**ADVANCED Version Contains:**
+**ADVANCED Version Contains**
 
 * Display, Hide or Change any Widget Title
 * Fully Mobile Responsive
 
-* Vine Master Advanced Viral Widget:
+* Vine Master Advanced Viral Widget
 * Display or hide Twitter Follow Button
 * Display or hide Tweet Share Button
 
-* Vine Master Responsive Player Widget:
+* Vine Master Responsive Player Widget
 * Display or hide Vine Video Player
 * Plays any Vine Video
 * Select Display Type (Simple or Postcard)
 * Select Display Size
 
-* Vine Master Responsive Feed Widget:
+* Vine Master Responsive Feed Widget
 * Displays Feed with your Vine Videos
 
-* TechGasp Shortcode Framework v3:
+* TechGasp Shortcode Framework v3
 * Universal Shortcode for all pages and posts, same Shortcode applies to all pages and posts. Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page or post. Option to automatically only show the shortcode in Posts and not Pages. Option to Automatically show the shortcode After the Title or After the Content.
 * Individual Shortcode for each page or post, individual customized shortcode per page or post
 * Shortcodes allow you to professionally display your plugin inside pages and posts maintaining fast page load times and excellent Google SEO
@@ -115,6 +116,9 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX
 
 
 == Changelog ==
+
+= 4.4.2.4 =
+* Wordpress 4.3.1
 
 = 4.4.2.3 =
 * Replacing WP_WIGDET with __contruct

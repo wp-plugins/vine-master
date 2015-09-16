@@ -2,7 +2,7 @@
 /**
 Plugin Name: Vine Master
 Plugin URI: http://wordpress.techgasp.com/vine-master/
-Version: 4.4.2.3
+Version: 4.4.2.4
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: vine-master
@@ -27,7 +27,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 if(!class_exists('vine_master')) :
 ///////DEFINE VERSION///////
-define( 'VINE_MASTER_VERSION', '4.4.2.3' );
+define( 'VINE_MASTER_VERSION', '4.4.2.4' );
 
 global $vine_master_name;
 $vine_master_name = "Vine Master"; //pretty name
